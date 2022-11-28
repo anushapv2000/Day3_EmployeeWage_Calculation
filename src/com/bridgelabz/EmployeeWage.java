@@ -1,19 +1,26 @@
 package com.bridgelabz;
 
 public class EmployeeWage {
+    static int Wageperhour=20;
+    static int Fulldayhour=8;
+
+    static int Parttimehour=4;
+    static int workingdaysmonth=20;
+
+    static int totalworkinghours=100;
+
 public static void main(String[] args)
-{   int Wageperhour=20;
-    int Fulldayhour=8;
-    int dailywage=0;
-    int Parttimehour=4;
-    int workingdaysmonth=20;
-    int d_count=1;
-    int t_wages=0;
-    int totalworkinghours=100;
-    int t_hours=0;
+{
     System.out.println("Welcome to Employee Wage Computation");
+    code_refactor();
+}
 
    // System.out.println(emp_check);
+    public static void code_refactor(){
+        int d_count=1;
+        int t_wages=0;
+        int t_hours=0;
+        int dailywage=0;
     while (d_count<=workingdaysmonth && t_hours<=totalworkinghours) {
         int emp_check = (int) (Math.random() * 10) % 3;
         switch (emp_check) {
